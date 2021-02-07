@@ -37,5 +37,33 @@
 
         yarn build
 
+# meus commits:
+
+-  Initialize project using Create React App
+        - iniciado o projeto, organização dos components.
+        - implementação do formulario e dos inputs controlados.
+        - card que mostra a informação de cada livro
+-  functionality check:
+        - apos os testes de funcionalidades.
+        - utilização do createStore no store.
+        - utilização do useSelector e do useDispatch.
+        - envio das actions para o store.
+-  bug fix + first styles:
+        - primeira implementação de estilos basicos.
+        - concerto de bugs com prevent default.
+- more style:
+        - implementação de estilos em toda a aplicação.
+- SplashScreen:
+        - criação e implementação da splashscren utilizando o useEffect.
+- Final style and bug fix:
+        - estilização final.
+        - concerto de um bug que desmarcava a checkbox quando renderizava a lista de livros denovo.
+        (resolvido utilizando operadores ternarios para verificar se o card possui ou não o atributo checked marcado como true.)
+- Readme and title change:
+        - mudança do titulo no index.html
+        - criação do Readme.
+
+        
+
 
 
