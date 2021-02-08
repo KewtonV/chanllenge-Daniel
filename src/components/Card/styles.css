@@ -1,0 +1,44 @@
+.Card{
+    box-sizing: content-box;
+    display: flex;
+    background-color: white;
+    width: 30vw;
+    min-width: 300px;
+    padding:5%;
+    margin: 2% 2%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+    box-shadow: 0.5px 1.2px 8px rgb(0, 167, 167);
+}
+.info h4{
+    display: flex;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    font-size: 80%;
+}
+.actions{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2%;
+}
+.checkbox{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    border-radius: 15%;
+    box-shadow: 0.5px 1.2px 8px rgb(0, 167, 167);
+}
+.actions button{
+    box-sizing: content-box;
+    border: black 1px solid;
+    background-color: white;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 15%;
+    margin-right: 1rem;
+    box-shadow: 0.25px 0.6px 4px rgb(0, 167, 167);
+}
