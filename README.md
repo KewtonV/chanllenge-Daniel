@@ -1,36 +1,69 @@
-![](https://app-qrcode-aquivo-importacao-modelo.s3.amazonaws.com/chanllengeLayoutGithubJustReact.png)
+# SERVNAC Challenge CRUD React Typescript.
 
-## Desafio
-Criar uma tela com Header, Body e Rodapé. No Body terá um CRUD com o tema e assunto
-que você desejar e deverá renderizar uma lista dessas informações na tela.
+## tenha certeza de ter instalado na sua maquina o node v14.15.0 ou superior.
 
-##### Requisitos obrigatórios
-- Uso Typescript (na criação do projeto, use um template em TS);
-- Utilizar Hooks;
+## para instalar os pacotes que foram utilizados no projeto(efeito do .gitignore que exclui o node_modules):
 
-##### Requisitos desejáveis (Porém importantes)
-- Uso de componentes funcionais;
-- A aplicação poderá ter um loading inicial, como um splash screen;
-- Uso de `Redux` para gerenciamento do estado da aplicação;
-- Estilização dos componentes com `styled-components`;
+        npm install
 
-## Avaliação
-A proposta deste desafio é para avaliar seu conhecimento em `reactJS` na criação de componentes, gerenciamento de estados, utilização de módulos nativos, typescript, boas práticas de programação, uso do GIT, conhecimento da linguagem e lib/framework utilizados, entre outras skills que serão demonstradas ao decorrer do projeto.
+# quais foram os pacotes utilizados:
 
-- Conclua o desafio da melhor forma possível, de acordo com suas habilidades.
-- Ao concluir, faça um `Pull Request` para branch *master*, assim saberemos que
-você terminou o desafio e já podemos iniciar a análise. Após o Pull Request
-entraremos em contato com você para lhe dar um feedback possitivo ou negativo.
+-   redux // react-redux  e seus @types
+-   react-icons
+-   alem do template typescript.
 
-### Dicas
+# depois de ter instalado os pacotes, para iniciar o app na sua maquina utilize:
 
-* Escreva um bom README com informações que auxiliem quem for ler o código (ex: como startar o projeto e como buildar);
- Seria ótimo poder executar a solução do desafio com apenas *um** comando (ou com o menor trabalho possível); =)
-* Utilize ReactJS e qualquer lib que desejar, mas lembre-se que, muitas vezes, "menos é mais";
-* Sinta-se a vontade para definir o layout do aplicativo;
-* Estamos procurando por sinais do seu entendimento de alguns conceitos como eventos, promises, ciclos de vida e como você aplica e implementa isto com a linguagem utilizada;
-* Uso do git será bem valorizado;
-* Seu código será avaliado por: semântica, estrutura, legibilidade, tamanho, elegância (entre outros fatores);
+     npm run start
+
+-   ou se preferir utilizar o yarn:
+
+    yarn start
 
 
-Boa sorte, esperamos que se saiam bem. :grinning: :thumbsup:
+# como foram utilizado os hooks?
+
+-   useState foi utilizado para guardar estados momentaneos antes de serem enviados para o store.
+-   useSelector foi utilizado para "resgatar" o store do provider.
+-   useDispatch foi utilizado para disparar ações do CRUD levando as actions.
+-   useEffect foi utilizado para rodar a splashScreen em um setTimeout.
+
+# como buildar?
+-   pode se utilizar:
+        
+        npm run build
+
+-   ou se preferir:
+
+        yarn build
+
+# meus commits:
+
+-  Initialize project using Create React App
+        - iniciado o projeto, organização dos components.
+        - implementação do formulario e dos inputs controlados.
+        - card que mostra a informação de cada livro
+-  functionality check:
+        - apos os testes de funcionalidades.
+        - utilização do createStore no store.
+        - utilização do useSelector e do useDispatch.
+        - envio das actions para o store.
+-  bug fix + first styles:
+        - primeira implementação de estilos basicos.
+        - concerto de bugs com prevent default.
+- more style:
+        - implementação de estilos em toda a aplicação.
+- SplashScreen:
+        - criação e implementação da splashscren utilizando o useEffect.
+- Final style and bug fix:
+        - estilização final.
+        - concerto de um bug que desmarcava a checkbox quando renderizava a lista de livros denovo.
+        (resolvido utilizando operadores ternarios para verificar se o card possui ou não o atributo checked marcado como true.)
+- Readme and title change:
+        - mudança do titulo no index.html
+        - criação do Readme.
+
+        
+
+
+
